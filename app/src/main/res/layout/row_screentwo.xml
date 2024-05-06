@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="screentwoRowModel" type="com.pettinder.app.modules.screentwo.data.model.ScreentwoRowModel"/>
+    </data>
+    <View android:background="@color/white_A700"
+        android:id="@+id/viewCreatefromOne"
+        android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+</layout>
