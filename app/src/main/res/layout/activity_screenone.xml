@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="screenoneVM" type="com.pettinder.app.modules.screenone.data.viewmodel.ScreenoneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameScreenOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageMapsiclemapOne"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_mapsicle_map}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_mapsicle_map"/>
+        <fragment android:id="@+id/mapMap"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_768pxv"
+            android:layout_width="match_parent" android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    </FrameLayout>
+</layout>
